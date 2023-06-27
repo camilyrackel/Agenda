@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+    <body>
+        <div>
+            <input type="text" placeholder="digite uma tarefa" id="tarefa" />
+            <button onclick="addTask()">
+                Adicionar
+            </button>
+        </div>
+        <div id="painel"></div>
+        <script>
+            function addTask(){
+               const tarefa = document.querySelector("#tarefa");
+               alert(tarefa.value);
+               tarefa.type = "password";
+            }
+        </script>
+</body>
+</html>
